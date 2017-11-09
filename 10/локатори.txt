@@ -1,0 +1,36 @@
+
+Елемент 1
+xpath=//div[@id='astroContent']//a
+xpath=//div[@id='astroContent']//a[contains(@href,'www.edna.bg/horoskopi')]
+css=div#astroContent a
+css=div#astroContent a:link
+css=div#astroContent a[href*="edna.bg/horoskopi"]
+css=div#astroContent a[href*="edna.bg/horoskopi"][a:active]
+
+Елемент 2
+xpath=//ul[@id='topnav']//a[contains(@href,'beauty')]/span
+css=ul#topnav a[href*="beauty"] > span
+css=ul#topnav a[href*="beauty"] span:first-child
+css=ul#topnav a[href*="beauty"] span:first-of-type
+
+Елемент 3
+Логната съм в замунда и не искам да се разлогвам:)
+
+Елемент 5
+xpath=//div[@class='search-block']//p/input[@class='search-block']
+css=div.search-block p input.search-block
+css=div[class='wrapper home-page'] div.search-block p input.search-block
+css=div.search-block > form.search-block-form input.search-block
+
+xpath=//li[@id='menu-bulgaria']//a[contains(@href,'vesti.bg/bulgaria')]
+xpath=//li[@id='menu-bulgaria']//a
+css=li#menu-bulgaria a[href*='vesti.bg/bulgaria']
+css=li#menu-bulgaria a span:first-child
+css=li#menu-bulgaria span a:first-of-type
+
+Елемент 7
+xpath=//a[contains(@href,'enterprise-hosting')and(contains(text(),'Learn More'))]
+xpath=//section[@id='platforms']//section[@class ='threeboxes plan enterprice']//a[contains(@href,'enterprise-hosting')and(contains(text(),'Learn More'))]
+xpath=//section[@class ='threeboxes plan enterprice']//a[contains(@href,'enterprise-hosting')and(contains(text(),'Learn More'))]
+css=section[class*='threeboxes plan enterprice'] a[href*='enterprise-hosting']
+css=section#platforms section[class*='threeboxes plan enterprice'] a[href*='enterprise-hosting']

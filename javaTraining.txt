@@ -1,0 +1,251 @@
+autocomplete : ctrl + space 
+System.out.println = syso + ctrl/space 
+
+char ch = 'c';
+++ increments a value by 1
+-- decrements a value by 1
+! inverts the value of a boolean
+
+// 1 ред коментар
+/* 
+* многоредов коментар
+*/
+
+?: short for if else - ternalen operator
+
+Ctrl + Shift + O : Organize imports
+Ctrl + Shift + T : Open Type
+Ctrl + Shift + F4 : Close all Opened Editors
+Ctrl + O : Open declarations
+Ctrl + E : Open Editor
+Ctrl + / : Line Comment
+Alt + Shift + R : Rename
+Alt + Shift + L : extract to Local Variable !!
+Alt + Shift + M : extract to Method
+F3 : Open Declaration
+Ctrl + Shift + F = format the code
+Alt + Shift + S = ?
+Ctrl + D - трие ред
+Alt + Shift + L = запазваме локална променлива
+ALT + стрелки - местиш код
+Alt+Shift+Z - Surround block with try and catch
+for() ctrl+space+enter !!!!!!
+
+http://www.vogella.com/tutorials/EclipseShortcuts/article.html
+
+object:
+has... - state - състояние (fields)
+can... - behaviour -  поведение
+могат да ... - метод
+
+конвенция: за именуване на булева пром : isBlaBla  
+		:методите се именуват с глагол
+
+главна буква - клас
+малка буква - променлива
+
+Ctrl + типа = линк за отваряне на класа
+
+масивите са от конкретен тип - (приемат само инт или само стринг ); винаги имат дължина - .leghnt
+масивите започват от - 0;Първият индекс е 0; индексът на последния е lenght - 1
+
+heap - динамична памет // static - статична
+
+Конструкторът е по-спецялен метод;изпозлва името на класа, гл. буква, дава начален state на обекта;
+
+this. за този обект (с който работим в момента);променяме неговите параметри
+
+void метод - return служи като break за цикъл;
+
+маркираме => задържаме alt И стрелките - местим на горе на долу
+
+ООП - 4 концепции ; наследяване, енкалсупация, полиморфизъм и абстракция;
+
+Наследяване: Inheritance :
+	наследяваш някои или всички членове на др клас
+	extends
+	връзките:   is a .... inheritance !!! (house is a building ) и връзката е в една посока /// 
+				has a ...composition (поле в класа)/// object composition - добавяне на поле
+	
+Конвенция за именуване на пакети : musala.com => com.musala.blabla.dram....
+
+overriding : predefine methods from the perant class; метода се различва по тялото, всичко друго е еднакво
+	дясно копче => source => override method
+	super - ключова дума, да донадградим метод, хем Override, хем преизпозлваме и наличното;
+	super - използване на полета, методи и конструктори от класа родител
+
+Енкалпсолация: 	
+	Access modifieres: public , private , protected , package ;
+		полетата обикновенно се правят Private
+	getter and setter ! ако искаме да достъпваме private полетата, така минават през валидация, не директен достъп; могат да се генерират автоматично - дясно копче => source => сеттер и геттер
+	
+final - не може да бъде променяно след това
+static	- това поле е общо за класа(неговата стойност е обща за всички), но не и за отделните инстанции;  
+static - достъпваме с името на класа и после .полето
+public final static MAX_AGE = 60; конвенция - променлива с главни букви - константа !
+
+you can override .equals, за да решиш по какво да сравняваш 2 обекта;
+
+при наследяване дефоутният констуктор вика деф констуктор на родителя;
+
+Abstraction:
+	iterface е абстракция; договор; 
+	implements - Ключ дума;
+	пак Is a ....връзка;
+	могат да се имплементират много класове;
+	абстрактен клас - ако има поне един абстрактен метод , трябва да направим класа абстрактен;
+	
+Полиморфизъм: много форми
+	 се постига с override на (абстрактни) методи; 
+
+Кастване - нова референция която сочи към същия обект, зада виждаме повече например методи;
+
+String 
+	\ escaping char like "" , \n - нов ред и др...
+	всичко събрано със стринг се превръща в стринг;
+	trim()-- маха начални и крайни интервали (паласки:))
+	
+Collection
+	(Нова външна гугъл библиотека за колеции)
+	-set - само уникални стойности;
+	-list - модерен масив; arrayList
+	-queue - fifo; 
+	всеки iterrable има for each !!! као всички колекгии
+	-Итератор (клас)- има 3 метода- от всяка колекция може да се вземе итератор който знае как точно да обходи конктерната колеция: names.iterator();обхождаме с интератор и while
+	Докато обхождаме може да трием само с интератор 
+	2 начина да обходим колекция с foreach or iterator ;
+	map: key-value : 
+
+Exeptions:
+	при Catch трябва да се започва с по-конкретните, които очакваме и след това основния например Exeption;
+	finaly винаги се изпълнява не зависимо дали име ексепшън в трай кеча, изпозлва се за : затваряне на стриймове файлове, кънекции
+
+Generics:	
+	къщата се държи като къща без значение дали е човешка, кучешка или друга....7
+	помага да не се занимаваме с кастване и кое на кое е инстанция
+	може да е клас или метод
+	при границата винаги е extends, без знаечение дали е клас или интерфейс  <Т extends IAnimal>
+	
+инициализацията е добре да се случва в конструктора; !
+за стринговете е добре по дефолт да зададем = ""; а не Null ;
+
+при статични методи може да импорнем статично класа и няма да има нужда да викаме винаги класа ; пример import static Assert.* И след това може да викнем feil директно
+
+overload method - Методи с еднакви имена но различни параметри
+
+
+16 20  8 ноември
+
+Maven
+	cmd:
+		(в команд промпт проверваме: echo %JAVA_HOME%   ---- % дай ми стойността)
+		mvn -v
+	
+	(deploy in remote repository)
+	(insall in local repository)
+	build - Компилиране (jar и др )
+	depen. version - SNAPSHOT -версията е още в разработка // избягваме да изпозлваме
+	jar -java arhive
+	war - web arhive
+	pom - каквото е описано в него, ще го дръпне автоматично
+	hibernate core - Framework за работа с бази данни
+	plugin - няккава функционалност
+	
+	javadoc - конфигурира документация
+	surefire plug in - рънва тестовете
+	
+	flaky test - нестабилен, понякога крашва защото не е успяло да вземе ресусрса; има опция за re run в surefire plugin
+	surefire-report plugin - в репортинг се слага, не в билд
+	може да се генерира репорт , въпреки тест фейлиъра 
+	статичните методи се викат с името на класа и важат за всички
+	по подразбиране търси думата Тест в името на класа 
+	
+Selenium
+	the newest chrome driver is 2.33
+	тестовете общуват с driver .exe
+	junit (testing framewotk) знае как да рънва тестове, алтернатива е testNG
+	selenium знае как да говори с браузера, не да рънва тестове
+	driver и browser е добре да са горе долу една версия на FF 54 , decko e 18
+	ff options : всякакви конфогурации на профила; about:config ; flags за chrome 
+	Select класа работи с дроп даун менюта, радио бутони и подобни
+	Аctions - advanced user interaction - като кликване на 2 бутона + клик с мишката , или drag and drop и подобни
+	FileUtils class - провери какво прави този клас ...
+	submit все едно натискаме enter Клавиш
+	Credentiols interface ! - за попълване на юзер и пас
+	
+	Wait 
+		expicitly - Конкретно поведение спрямо 1 обект, изчакваме нещо конкретно 
+		implicitly - по подразбиране за много, Общо за всички 
+		imlicit : докато е вдигнат въпросния драйвер , важи на всякъде където боравим с елементите findElement 
+		expicit wait и custom expicit:
+			webdriverwait - инастанцираме 
+			ExpectedConditions - дадени на готово
+			ExpectedCondition - custom expicit
+			new Interface - създава анонимен клас импл. дадения интервейс, инстанцира се и override ва метода inline в кода; не инстанцираме интерфейса; 
+			
+			
+	Можем да си правим методи за проверка дали някой webelement е показан, подаваме на булеви метода локатор и вътре try, catch // isElementPresented
+	
+	pop-up 
+		switch to - връща targetLocator ; java scrip method open 
+		handle- strings Които драйвъра взима и са уникални за всеки прозорец //.getwindowhandler // можем да правим Set с всички хендъли и после си избираме от който имаме нужда с обхождане
+		.close - затваря само current прозореца (ако е последния отворен го quit ва) 
+		.quit затваря всички , убива процеса
+		
+	Alert 
+		+ http autenticaion is also alert for selenium
+	Frame 
+		Трябва да switch ваме към всеки framework за да мже да локираме елементите вътре 
+		switchToDefaltcontent - тд връща най-горе на страницата с всички Frames 
+		
+		
+Design Pettern and Page Obj model
+	неща хареактерни за мн страници се изнасят в собствен клас като main menu -то
+	в home page класа- неща характерни само за home page 
+	searchResults.java - клас за страницата показана след търсене в търсачката на сайта 
+	productDetails.java - клас след клик на резултата
+	методите събират няколко действия, съвкупност;трябва да окомплектоваме действията
+	pageFactory.initElements();  - вместо нас ще локира и намери елемнта и съхрани ; използваме FindBy и после инициализиране в конструктора и после може да извикваме директно локирания елемнт 
+	можем докато пищем теста да билдваме frameworka защотото ще създаваме методи които ни трябват
+	добре е да изнесем клас който репрезентира Browser - ще сетъпва, отваря 
+	base page - Може да имаме клас родител на всички станици; за методи валидни за всички страници като Verify title
+	измисляме си дума която ще изпозламе за нарпимер assert и я използваме за вички assertи в проекта - като verify...
+	
+	
+thread save method - Няма нищо статично и може да ръннем паралено с мавен, ще може с jenkis - cont. integration tool(с различни джобове ще рънне тетсовете ако са и в различни suites)
+в testing framework а не е нужно да имаме getter И setter
+
+
+
+	
+	https://saucelabs.com/resources/articles/selenium-tips-css-selectors
+
+Version control
+Git - за разлика от ес ви ен, всеки има и централизирано локално репоо освен основното; всичко 1во живее на моя комп; след сваляне на гит имаме локално репо  и може да се свържем с централно след това
+github компания- предоставя услугата на централизирано репо; публично ; безплатното се вижда от всички Opensource
+master/trunk - основна сабилна версия на която правим branch ове, за да не мажем по основнив код
+Конзола:
+pwd - present working directory 
+dir - listwa direktorii - windows style/ ls - linux style
+cd /d - ни в вкарва в Declaration
+cd imetoNaFaila/ - вкарва ни в папката
+tab - дописва
+отиваме в папката, и кзваме git init 
+commit - вкарваме в локалното ни репо, след stage Нивото (add)
+-m " " - оставя msg
+-am "" - add + msg
+push - w centralnoto reppo
+merge - става част от мастъра !
+(pull -дефаткто прави merge с локалните промени)
+
+
+ shift+instert = paste
+ 
+
+
+
+Check:
+diff?? csv? 
+testasure?
+
+	
